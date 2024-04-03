@@ -32,9 +32,7 @@ Para iniciar el docker se debe seguir los siguientes pasos:
 
   2. Si quieres verificar la instalacion, puedes usar el siguiente comando:
   
-    ```cmd
     sudo docker run hello-world
-    ``` 
 
 ## Ejecutar Docker 
 
@@ -42,9 +40,8 @@ Para poder crear la imagen y ejecutar el docker se deben seguir los siguientes p
 
   1. Se debe ejecutar el siguiente comando para construir la imagen del docker. 
 
-    ```
     docker build -t whisper .
-    ``` 
+
   2. Luego de construir la image, se debe ejecutar la imagen, usando lo siguiente:
   
     docker run -p 8000:80 whisper
