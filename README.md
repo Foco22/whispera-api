@@ -47,10 +47,8 @@ Para poder crear la imagen y ejecutar el docker se deben seguir los siguientes p
     ``` 
   2. Luego de construir la image, se debe ejecutar la imagen, usando lo siguiente:
   
-    ```
     docker run -p 8000:80 whisper
-    ``` 
-
+    
 
 ## Whisper Api
 
