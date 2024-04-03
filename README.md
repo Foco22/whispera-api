@@ -6,7 +6,7 @@ Para iniciar el docker se debe seguir los siguientes pasos:
  1. Se debe tener instalado docker en el computador o VM. Si no lo tiene instalado, por favor seguir los siguiente pasos (esta instalación aplica para Linux). Si esta usando Windows, te recomiendo ver este enlance: https://docs.docker.com/desktop/install/windows-install/
     
     A. Actualizar el sistema usando;
-    ```cmd
+    ```
     sudo apt-get update
     ```
     B. Instalar adicionales paquetes:
@@ -42,12 +42,12 @@ Para poder crear la imagen y ejecutar el docker se deben seguir los siguientes p
 
   1. Se debe ejecutar el siguiente comando para construir la imagen del docker. 
 
-    ```cmd
+    ```
     docker build -t whisper .
     ``` 
   2. Luego de construir la image, se debe ejecutar la imagen, usando lo siguiente:
   
-    ```cmd
+    ```
     docker run -p 8000:80 whisper
     ``` 
 
