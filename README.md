@@ -52,7 +52,7 @@ Para poder crear la imagen y ejecutar el docker se deben seguir los siguientes p
 Este proyecto tiene principalmente un servicio, el cual se accede a traves de api/whisper desde el puerto localhost:8000 o del puerto de la VM, donde se despliegue el docker. 
 
 Si se quiere probar usando python, se puede probar con el siguiente script:
-    ```cmd
+
       import sys
       import requests
 
@@ -64,6 +64,5 @@ Si se quiere probar usando python, se puede probar con el siguiente script:
       response = requests.post(url, files=files)
 
       print(response.text)
-    ``` 
 
 
