@@ -7,6 +7,7 @@ import requests
 from servicewhisper import WhisperClass
 from typing import List
 from fastapi.responses import JSONResponse, RedirectResponse
+import torch
 
 load_dotenv()
 
@@ -37,4 +38,13 @@ async def handler(files: List[UploadFile] = File(...)):
     return JSONResponse(content={'results':results_})
 
 
-
+@app.post("/api/cuda")
+async def api_service(request: Request):
+    try:
+        body = await request.json()
+        device = "cuda" if torch.cuda.is_available() else "cpu"
+        return {
+            'device': device
+        }
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=f"Invalid input: {str(e)}")

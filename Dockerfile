@@ -1,5 +1,5 @@
-#FROM nvidia/cuda:12.3.2-cudnn9-runtime-ubuntu22.04
-FROM python:3.8
+FROM nvidia/cuda:12.3.2-cudnn9-runtime-ubuntu22.04
+#FROM python:3.8
 
 WORKDIR /code
 
