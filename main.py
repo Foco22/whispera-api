@@ -12,10 +12,6 @@ load_dotenv()
 
 app = FastAPI()
 
-@app.get("/")
-async def read_root():
-    return {"Hello": "World"}
-
 @app.get("/", include_in_schema=False)
 async def redirect_to_docs():
     return RedirectResponse(url='/docs')
