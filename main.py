@@ -12,7 +12,7 @@ load_dotenv()
 
 app = FastAPI()
 
-@app.get("/")
+@app.get("/start")
 async def read_root():
     return {"Hello": "World"}
 
