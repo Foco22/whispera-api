@@ -7,11 +7,7 @@ if len(sys.argv) < 2:
     sys.exit(1)
 
 hostname_or_ip = sys.argv[1]
-url = 'http://{}:8000/api/whisper'.format(hostname_or_ip)
-
-files = {'files': ('audio.mp3', open('audio.mp3', 'rb'), 'audio/mpeg')}
-print(files)
-print(url)
-response = requests.post(url, files=files)
+url = 'http://localhost:8000/start'
+response = requests.get(url)
 
 print(response.text)

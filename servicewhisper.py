@@ -10,8 +10,8 @@ class WhisperClass:
     def __init__(self, file, use_gpu=False):
         self.file = file
         self.use_gpu = use_gpu and torch.cuda.is_available()
-        #self.device = "cuda" if torch.cuda.is_available() else "cpu"
-        self.device = "cpu"
+        self.device = "cuda" if torch.cuda.is_available() else "cpu"
+        #self.device = "cpu"
 
     def main(self):
 
